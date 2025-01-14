@@ -1,11 +1,12 @@
 # Portfolio Project
 
-This is a personal portfolio project built using **React**, **TailwindCSS**, and **Vite**. The portfolio showcases navigation between different sections such as Home, About, Skills, Projects, and Contact.
+This is a personal portfolio project built using **React**, **TailwindCSS**, and **Vite**. The portfolio showcases navigation between different sections such as Home, About, Skills, Projects, and Contact. The project now integrates dynamic 3D models and animations using **React Three Fiber** and **@react-three/drei**.
 
 ## Features
 
 - **Responsive Design**: The application is designed to be mobile-friendly with smooth navigation and adaptive layouts.
 - **Custom Navigation Bar**: Features a fixed navigation bar with a toggleable menu for smaller screens.
+- **Dynamic 3D Models**: Interactive 3D elements such as a Hacker Room, React Logo, and more are included.
 - **Modern Styling**: Uses TailwindCSS for seamless and efficient styling.
 - **Single Page Architecture**: Components are rendered dynamically using React.
 - **Built with Vite**: Provides fast development and build processes.
@@ -13,16 +14,25 @@ This is a personal portfolio project built using **React**, **TailwindCSS**, and
 ## Project Structure
 
 ```plaintext
-├── public/              # Assets such as images, icons
+├── public/              # Assets such as images, icons, and 3D models
 ├── src/
 │   ├── components/
-│   │   └── NavBar.jsx   # Navigation bar component
+│   │   ├── CanvasLoader.jsx  # Loader component for 3D content
+│   │   ├── Cube.jsx          # Interactive Cube model
+│   │   ├── HackerRoom.jsx    # 3D Hacker Room scene
+│   │   ├── HeroCamera.jsx    # Camera logic for the Hero section
+│   │   ├── NavBar.jsx        # Navigation bar component
+│   │   ├── Reactlogo.jsx     # 3D React Logo model
+│   │   ├── Rings.jsx         # Rotating Rings animation
+│   │   └── Target.jsx        # Animated Target model
 │   ├── sections/
-│   │   └── App.jsx      # Main application layout
-│   ├── index.css        # Global and utility styles
-│   └── main.jsx         # Entry point for the React application
-├── tailwind.config.js   # TailwindCSS configuration
-├── package.json         # Project metadata and dependencies
+│   │   ├── App.jsx           # Main application layout
+│   │   └── Hero.jsx          # Hero section with integrated 3D components
+│   ├── constants/            # Helper functions and constants
+│   ├── index.css             # Global and utility styles
+│   └── main.jsx              # Entry point for the React application
+├── tailwind.config.js        # TailwindCSS configuration
+├── package.json              # Project metadata and dependencies
 ```
 
 ## Installation and Setup
@@ -69,15 +79,23 @@ To run this project locally, follow these steps:
 - **React**: A JavaScript library for building user interfaces.
 - **TailwindCSS**: A utility-first CSS framework for custom designs.
 - **Vite**: A modern frontend build tool.
+- **React Three Fiber**: Declarative 3D rendering in React.
+- **@react-three/drei**: Helper components for React Three Fiber.
+- **GSAP**: Animation library for smooth interactions.
 - **JavaScript (ES6+)**: For logic and interactivity.
 - **PostCSS**: For additional CSS processing.
 
 ## Key Components
 
 - **NavBar.jsx**: Implements the navigation bar with responsive behavior.
-- **App.jsx**: Wraps the main sections of the portfolio.
-- **index.css**: Contains global styles and Tailwind utility classes.
-- **main.jsx**: Entry point for rendering the React app.
+- **Hero.jsx**: Hero section integrating 3D models and animations.
+- **HackerRoom.jsx**: A detailed 3D room scene.
+- **CanvasLoader.jsx**: Displays a loading indicator for 3D content.
+- **Cube.jsx**: Interactive and animated 3D cube.
+- **Target.jsx**: Animated target model with GSAP animations.
+- **Reactlogo.jsx**: 3D React logo.
+- **Rings.jsx**: Rotating rings animation using GSAP.
+- **HeroCamera.jsx**: Camera movement logic for immersive effects.
 
 ## Scripts
 
