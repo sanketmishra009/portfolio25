@@ -124,4 +124,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Built with passion and React by Sanket Mishra.
+Built with passion and React by Sanket Mishra❤️.
