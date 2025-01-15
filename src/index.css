@@ -44,7 +44,7 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black  transition-all active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
@@ -66,17 +66,26 @@ body {
     @apply text-transparent bg-clip-text bg-gradient-to-t from-blue-500 to-red-300;
   }
 
+  .text-grad2 {
+    @apply text-transparent bg-clip-text bg-gradient-to-t from-slate-100 to-violet-500;
+  }
+
+  .text-grad2-small {
+    @apply text-transparent bg-clip-text bg-gradient-to-t from-slate-500 to-slate-200;
+  }
+
   /* about section */
+
   .grid-container {
-    @apply w-full h-full border border-black-300 bg-black-200 rounded-lg sm:p-7 p-4 flex flex-col gap-5;
+    @apply w-full h-full border border-violet-300 bg-black rounded-lg sm:px-7 p-7 flex flex-col gap-8 justify-end bg-[url('assets/gridbg.png')];
   }
 
   .grid-headtext {
-    @apply text-xl font-semibold mb-2 text-white font-generalsans;
+    @apply text-[1.1rem] font-bold mb-2 underline decoration-violet-400;
   }
 
   .grid-subtext {
-    @apply text-[#afb0b6] text-base font-generalsans;
+    @apply text-white font-mono font-semibold;
   }
 
   .copy-container {

@@ -7,6 +7,10 @@ This is a personal portfolio project built using **React**, **TailwindCSS**, and
 - **Responsive Design**: The application is designed to be mobile-friendly with smooth navigation and adaptive layouts.
 - **Custom Navigation Bar**: Features a fixed navigation bar with a toggleable menu for smaller screens.
 - **Dynamic 3D Models**: Interactive 3D elements such as a Hacker Room, React Logo, and more are included.
+- **About Section**: Highlights skills, experience, and contact details with features like:
+  - A globe visualization showing timezone flexibility.
+  - Details on the tech stack, machine learning expertise, and passion for programming.
+  - An interactive "Copy Email" feature for easy communication.
 - **Modern Styling**: Uses TailwindCSS for seamless and efficient styling.
 - **Single Page Architecture**: Components are rendered dynamically using React.
 - **Built with Vite**: Provides fast development and build processes.
@@ -24,10 +28,12 @@ This is a personal portfolio project built using **React**, **TailwindCSS**, and
 │   │   ├── NavBar.jsx        # Navigation bar component
 │   │   ├── Reactlogo.jsx     # 3D React Logo model
 │   │   ├── Rings.jsx         # Rotating Rings animation
-│   │   └── Target.jsx        # Animated Target model
+│   │   ├── Target.jsx        # Animated Target model
+│   │   └── Button.jsx        # Reusable button component
 │   ├── sections/
 │   │   ├── App.jsx           # Main application layout
-│   │   └── Hero.jsx          # Hero section with integrated 3D components
+│   │   ├── Hero.jsx          # Hero section with integrated 3D components
+│   │   └── About.jsx         # About section with interactive features
 │   ├── constants/            # Helper functions and constants
 │   ├── index.css             # Global and utility styles
 │   └── main.jsx              # Entry point for the React application
@@ -82,6 +88,7 @@ To run this project locally, follow these steps:
 - **React Three Fiber**: Declarative 3D rendering in React.
 - **@react-three/drei**: Helper components for React Three Fiber.
 - **GSAP**: Animation library for smooth interactions.
+- **React Globe**: Interactive globe visualization.
 - **JavaScript (ES6+)**: For logic and interactivity.
 - **PostCSS**: For additional CSS processing.
 
@@ -89,6 +96,11 @@ To run this project locally, follow these steps:
 
 - **NavBar.jsx**: Implements the navigation bar with responsive behavior.
 - **Hero.jsx**: Hero section integrating 3D models and animations.
+- **About.jsx**: About section featuring:
+  - Globe visualization for timezone and location details.
+  - Highlighted tech stack and skills.
+  - Machine learning expertise description.
+  - Interactive "Copy Email" button for easy communication.
 - **HackerRoom.jsx**: A detailed 3D room scene.
 - **CanvasLoader.jsx**: Displays a loading indicator for 3D content.
 - **Cube.jsx**: Interactive and animated 3D cube.
@@ -96,6 +108,7 @@ To run this project locally, follow these steps:
 - **Reactlogo.jsx**: 3D React logo.
 - **Rings.jsx**: Rotating rings animation using GSAP.
 - **HeroCamera.jsx**: Camera movement logic for immersive effects.
+- **Button.jsx**: Reusable button with optional beam animation.
 
 ## Scripts
 

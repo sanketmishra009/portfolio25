@@ -10,6 +10,7 @@ import Reactlogo from '../components/Reactlogo.jsx'
 import Cube from '../components/Cube.jsx'
 import Rings from '../components/Rings.jsx'
 import HeroCamera from '../components/HeroCamera.jsx'
+import Button from '../components/Button.jsx'
 
 const Hero = () => {
 
@@ -46,6 +47,11 @@ const Hero = () => {
 
                     </Suspense>
                 </Canvas>
+            </div>
+            <div className='absolute bottom-7 right-0 left-0 w-full c-space z-10'>
+                <a href="#about" className='w-full'>
+                    <Button isBeam name="Let's work together" containerClass='' />
+                </a>
             </div>
         </section>
     )
