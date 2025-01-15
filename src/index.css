@@ -77,7 +77,7 @@ body {
   /* about section */
 
   .grid-container {
-    @apply w-full h-full border border-violet-300 bg-black rounded-lg sm:px-7 p-7 flex flex-col gap-8 justify-end bg-[url('assets/gridbg.png')];
+    @apply w-full h-full border border-violet-300 bg-black rounded-lg sm:px-7 p-7 flex flex-col gap-8 justify-end;
   }
 
   .grid-headtext {
@@ -90,6 +90,10 @@ body {
 
   .copy-container {
     @apply cursor-pointer flex justify-center items-center gap-2;
+  }
+
+  .gridbg {
+    background-image: url(/assets/gridbg.png);
   }
 
   /* projects section  */

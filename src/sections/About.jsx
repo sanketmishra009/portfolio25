@@ -13,10 +13,10 @@ const About = () => {
         }, 1000 * 2);
     };
     return (
-        <section className="c-space my-20 pt-28 bg-[url(' assets /gridbg.png')] bg-clip-border" id='about' >
-            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full bg-[url('assets/gridbg.png')] bg-contain">
+        <section className="c-space my-20 pt-28" id='about' >
+            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full gridbg bg-contain p-5">
                 <div className='col-span-1 lg:row-span-2'>
-                    <div className="grid-container bg-[url('assets/gridbg.png')]">
+                    <div className="grid-container gridbg">
                         <img src="assets/grid1.png" alt="grid-1" className='sm:h-[276px] h-full w-full object-contain' />
                         <div className="">
                             <p className="grid-headtext text-grad-small">Hi, I'm Sanket Mishra</p>
@@ -40,7 +40,7 @@ const About = () => {
                     </div>
                 </div>
                 <div className="col-span-1 lg:row-span-3">
-                    <div className="grid-container bg-[url('assets/gridbg.png')] bg-top-right">
+                    <div className="grid-container gridbg bg-top-right">
                         <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
                             <Globe
                                 height={326}
@@ -63,8 +63,11 @@ const About = () => {
                     </div>
                 </div>
                 <div className="xl:col-span-2 lg:row-span-2">
-                    <div className="grid-container bg-[url('assets/gridbg.png')] bg-cover">
-                        <div className="flex justify-evenly">
+                    <div className="grid-container gridbg bg-cover">
+                        <div className="flex sm:hidden">
+                            <img src="assets/gridml2.png" alt="gridml" className='w-auto sm:h-[15rem] h-full object-contain' />
+                        </div>
+                        <div className="hidden sm:flex justify-evenly">
                             <img src="assets/gridml.png" alt="gridml" className='w-auto sm:h-[15rem] h-full object-contain' />
                             <img src="assets/gridml2.png" alt="gridml" className='w-auto sm:h-[15rem] h-full object-contain' />
                         </div>
@@ -78,13 +81,17 @@ const About = () => {
                 </div>
                 <div className="xl:col-span-1 lg:row-span-1">
                     <div className="grid-container">
-                        <div className="flex justify-start">
+                        <div className="sm:hidden flex">
+                            <img src="assets/gridTF.png" alt="gridImage" className="h-[5rem] w-auto object-contain sm:hidden" />
+                            <img src="assets/gridReact.svg" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
+                        </div>
+                        <div className="hidden sm:flex justify-start">
                             <img src="/vite.svg" alt="gridImage" className="h-[5rem] w-auto object-contain" />
                             <img src="assets/gridReact.svg" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
                         </div>
-                        <div className="flex justify-start">
+                        <div className="hidden sm:flex justify-start">
                             <img src="assets/gridTF.png" alt="gridImage" className="h-[5rem] w-auto object-contain" />
-                            <img src="assets/gridOC.png" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-multiply" />
+                            <img src="assets/gridOC.png" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
                         </div>
 
                     </div>
@@ -100,7 +107,7 @@ const About = () => {
                 </div>
 
                 <div className="xl:col-span-1 lg:row-span-2">
-                    <div className="grid-container items-center bg-[url('assets/gridbg.png')] bg-btoom-right">
+                    <div className="grid-container items-center gridbg bg-btoom-right">
                         <img src="assets/grid4.png" alt="grid4" className='w-full md:h-[200px] sm:h-[276px] h-fit object-cover sm:object-top' />
                         <div className='flex justify-center items-center gap-x-1  rounded-xl w-60 h-auto'>
                             <img src={isCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" onClick={handleCopy} />
