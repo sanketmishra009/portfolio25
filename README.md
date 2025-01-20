@@ -129,7 +129,8 @@ TailwindCSS is configured in `tailwind.config.js` to enable:
 
 ## Contributions
 
-Feel free to fork this repository, raise issues, or submit pull requests to improve the portfolio!
+Feel free to fork this repository, raise issues, or submit pull requests to improve the portfolio!\
+Prototype deployed at: https://portfolio25-6c8a9.web.app/
 
 ## License
 

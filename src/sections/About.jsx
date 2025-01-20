@@ -14,8 +14,8 @@ const About = () => {
     };
     return (
         <section className="c-space my-20 pt-28" id='about' >
-            <div className="grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols-1 gap-5 h-full gridbg bg-contain p-5">
-                <div className='col-span-1 lg:row-span-2'>
+            <div className="grid lg:grid-cols-3  md:grid-cols-2 grid-cols-1 gap-5 h-full gridbg bg-contain p-5">
+                <div className='col-span-1 lg:row-span-1 md:row-span-1'>
                     <div className="grid-container gridbg">
                         <img src="assets/grid1.png" alt="grid-1" className='sm:h-[276px] h-full w-full object-contain' />
                         <div className="">
@@ -28,7 +28,7 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-span-1 lg:row-span-2">
+                <div className="col-span-1 lg:row-span-1 md:row-span-1">
                     <div className="grid-container ">
                         <img src="assets/grid2.png" alt="grid2" className='sm:h-[276px] h-full w-full object-contain' />
                         <p className="grid-headtext text-grad2">
@@ -39,7 +39,7 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className="col-span-1 lg:row-span-3">
+                <div className="col-span-1 lg:row-span-2 md:row-span-2">
                     <div className="grid-container gridbg bg-top-right">
                         <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center">
                             <Globe
@@ -62,12 +62,12 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="xl:col-span-2 lg:row-span-2">
+                <div className="lg:col-span-2 lg:row-span-2 md:row-span-1">
                     <div className="grid-container gridbg bg-cover">
-                        <div className="flex sm:hidden">
+                        <div className="flex lg:hidden">
                             <img src="assets/gridml2.png" alt="gridml" className='w-auto sm:h-[15rem] h-full object-contain' />
                         </div>
-                        <div className="hidden sm:flex justify-evenly">
+                        <div className="hidden lg:flex justify-evenly">
                             <img src="assets/gridml.png" alt="gridml" className='w-auto sm:h-[15rem] h-full object-contain' />
                             <img src="assets/gridml2.png" alt="gridml" className='w-auto sm:h-[15rem] h-full object-contain' />
                         </div>
@@ -79,24 +79,25 @@ const About = () => {
                         </p>
                     </div>
                 </div>
-                <div className="xl:col-span-1 lg:row-span-1">
+                <div className=" col-span-1 lg:row-span-1 md:row-span-1">
                     <div className="grid-container">
+                        <h1 className='grid-headtext text-grad2'>Socials</h1>
                         <div className="sm:hidden flex">
-                            <img src="assets/gridTF.png" alt="gridImage" className="h-[5rem] w-auto object-contain sm:hidden" />
-                            <img src="assets/gridReact.svg" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
+                            <img src="/assets/github.svg" alt="gridImage" className="h-[5rem] w-auto object-contain sm:hidden" />
+                            <img src="/assets/gridReact.png" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
                         </div>
                         <div className="hidden sm:flex justify-start">
-                            <img src="/vite.svg" alt="gridImage" className="h-[5rem] w-auto object-contain" />
-                            <img src="assets/gridReact.svg" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
+                            <img src="/assets/github.svg" alt="gridImage" className="h-[5rem] w-auto object-contain" />
+                            <img src="/assets/gridReact.png" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
                         </div>
                         <div className="hidden sm:flex justify-start">
-                            <img src="assets/gridTF.png" alt="gridImage" className="h-[5rem] w-auto object-contain" />
-                            <img src="assets/gridOC.png" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
+                            <img src="/assets/gridTF.png" alt="gridImage" className="h-[5rem] w-auto object-contain" />
+                            <img src="/assets/gridOC.png" alt="gridImage" className="h-[5rem] w-auto object-contain mix-blend-lighten" />
                         </div>
 
                     </div>
                 </div>
-                <div className="xl:col-span-2 lg:row-span-2 ">
+                <div className="lg:col-span-2 lg:row-span-1 md:row-span-1">
                     <div className="grid-container">
                         <img src="assets/grid3.png" alt="grid3" className='w-full sm:h-[266px] h-full object-contain' />
                         <p className="grid-headtext text-grad2">My passion for programming</p>
@@ -106,7 +107,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="xl:col-span-1 lg:row-span-2">
+                <div className="md:row-span-1 ">
                     <div className="grid-container items-center gridbg bg-btoom-right">
                         <img src="assets/grid4.png" alt="grid4" className='w-full md:h-[200px] sm:h-[276px] h-fit object-cover sm:object-top' />
                         <div className='flex justify-center items-center gap-x-1  rounded-xl w-60 h-auto'>

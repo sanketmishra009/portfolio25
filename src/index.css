@@ -77,7 +77,7 @@ body {
   /* about section */
 
   .grid-container {
-    @apply w-full h-full border border-violet-300 bg-black rounded-lg sm:px-7 p-7 flex flex-col gap-8 justify-end;
+    @apply w-full h-full border border-violet-300 bg-black rounded-lg sm:px-7 p-7 flex flex-col gap-8 justify-center;
   }
 
   .grid-headtext {
@@ -93,7 +93,8 @@ body {
   }
 
   .gridbg {
-    background-image: url(/assets/gridbg.png);
+    /* background-image: url(/assets/gridbg2.png); */
+    background: none;
   }
 
   /* projects section  */
