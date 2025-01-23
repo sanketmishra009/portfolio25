@@ -2,9 +2,12 @@ import React, { Suspense, useState } from 'react'
 import { myProjects } from '../constants/index';
 import { Canvas } from '@react-three/fiber';
 import { Center, OrbitControls } from '@react-three/drei';
+import Globe from 'react-globe.gl'
+import DemoComputer from '../components/DemoComputer';
+import DemoComputer2 from '../components/DemoComputer2';
 
 import CanvasLoader from '../components/CanvasLoader';
-// import DemoComputer from 
+
 
 const Projects = () => {
     const [projectIndex, setProjectIndex] = useState(0);
@@ -22,7 +25,7 @@ const Projects = () => {
     let random = Math.random();
 
     return (
-        <section>
+        <section id='projects' className='h-fit  p-6'>
             <h1 className='text-7xl font-semibold text-white text-center'>My Work</h1>
             <div className='grid lg:grid-cols-2 grid-cols-1 mt-12 gap-5 w-ful p-5'>
                 <div className={"flex flex-col gap-5 relative sm:p-10 py-10 px-5 shadow-2xl shadow-violet-900 rounded-xl bg-gradient-to-tr from-black to-fuchsia-900"}>
@@ -49,24 +52,20 @@ const Projects = () => {
                 </div>
                 <div className="h-96 md:h-full border border-slate-900 rounded-xl bg-violet-950 shadow-2xl shadow-fuchsia-900">
                     <Canvas>
+                        <ambientLight intensity={Math.PI} />
+                        <directionalLight position={[10, 10, 5]} />
                         <Center>
                             <Suspense fallback={<CanvasLoader />}>
-                                <group scale={2} position={[0, -3, 0]} rotation={[0, -0.1, 0]}>
-                                    {/* <DemoComputer texture={currentProject.texture} /> */}
-                                    <OrbitControls />
-                                    <ambientLight intensity={0.5} />
-                                    <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-                                    <mesh position={[0, 0, 0]} rotation={[0, 0, 0]}>
-                                        <boxGeometry args={[1, 1, 1]} />
-                                        <meshStandardMaterial color={'fuchsia'} />
-                                    </mesh>
+                                <group scale={2} position={[-0.3, -3, 0]} rotation={[0, 0, 0]}>
+                                    <DemoComputer2 texture={currentProject.texture} />
                                 </group>
                             </Suspense>
                         </Center>
+                        <OrbitControls maxPolarAngle={Math.PI / 2} enableZoom={false} />
                     </Canvas>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

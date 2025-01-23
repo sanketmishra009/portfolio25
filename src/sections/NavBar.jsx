@@ -10,16 +10,16 @@ export const NavBarItems = () => {
                     <a className='nav-li-a' href="/">Home</a>
                 </li>
                 <li className='nav-li text-grad-small'>
-                    <a className='nav-li-a' href="/about">About</a>
+                    <a className='nav-li-a' href="/#about">About</a>
                 </li>
                 <li className='nav-li text-grad-small'>
-                    <a className='nav-li-a' href="/skills">Skills</a>
+                    <a className='nav-li-a' href="/#skills">Skills</a>
                 </li>
                 <li className='nav-li text-grad-small'>
-                    <a className='nav-li-a' href="/projects">Projects</a>
+                    <a className='nav-li-a' href="/#projects">Projects</a>
                 </li>
                 <li className='nav-li text-grad-small'>
-                    <a className='nav-li-a' href="/contact">Contact</a>
+                    <a className='nav-li-a' href="/#contact">Contact</a>
                 </li>
             </ul>
         </>
