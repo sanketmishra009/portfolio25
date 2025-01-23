@@ -29,17 +29,53 @@ This is a personal portfolio project built using **React**, **TailwindCSS**, and
 │   │   ├── Reactlogo.jsx     # 3D React Logo model
 │   │   ├── Rings.jsx         # Rotating Rings animation
 │   │   ├── Target.jsx        # Animated Target model
-│   │   └── Button.jsx        # Reusable button component
+│   │   ├── Button.jsx        # Reusable button component
+│   │   ├── DemoComputer.jsx  # 3D Computer model
+│   │   ├── DemoComputer2.jsx # 3D Computer model with video texture
 │   ├── sections/
 │   │   ├── App.jsx           # Main application layout
 │   │   ├── Hero.jsx          # Hero section with integrated 3D components
-│   │   └── About.jsx         # About section with interactive features
+│   │   ├── About.jsx         # About section with interactive features
+│   │   ├── Projects.jsx      # Projects section showcasing work
 │   ├── constants/            # Helper functions and constants
 │   ├── index.css             # Global and utility styles
 │   └── main.jsx              # Entry point for the React application
 ├── tailwind.config.js        # TailwindCSS configuration
 ├── package.json              # Project metadata and dependencies
 ```
+
+### Components
+
+- **CanvasLoader.jsx**: Displays a loading indicator for 3D content, ensuring a smooth user experience while 3D models are being loaded.
+- **Cube.jsx**: An interactive and animated 3D cube that adds a dynamic element to the portfolio.
+- **HackerRoom.jsx**: A detailed 3D room scene that showcases advanced 3D modeling and rendering capabilities.
+- **HeroCamera.jsx**: Manages camera movements and logic for the Hero section, providing immersive effects.
+- **NavBar.jsx**: Implements the navigation bar with responsive behavior, ensuring easy navigation across different sections.
+- **Reactlogo.jsx**: A 3D model of the React logo, demonstrating the integration of 3D elements.
+- **Rings.jsx**: Rotating rings animation using GSAP, adding a visually appealing effect.
+- **Target.jsx**: An animated target model with GSAP animations, showcasing advanced animation techniques.
+- **Button.jsx**: A reusable button component with optional beam animation, ensuring consistency across the application.
+- **DemoComputer.jsx**: A 3D computer model that adds an interactive element to the portfolio.
+- **DemoComputer2.jsx**: A 3D computer model with video texture, demonstrating advanced 3D rendering techniques.
+
+### Sections
+
+- **App.jsx**: The main application layout that integrates all sections and components, providing a cohesive structure.
+- **Hero.jsx**: The Hero section that integrates 3D models and animations, creating an engaging first impression.
+- **About.jsx**: The About section featuring interactive elements such as a globe visualization, tech stack highlights, and a "Copy Email" button.
+- **Projects.jsx**: The Projects section showcasing various works, with navigation buttons to switch between different projects.
+
+### Constants
+
+- **constants/index.js**: Contains helper functions and constants used throughout the application, ensuring maintainability and reusability.
+
+### Styles
+
+- **index.css**: Contains global and utility styles, ensuring consistent styling across the application.
+
+### Entry Point
+
+- **main.jsx**: The entry point for the React application, initializing the app and rendering the main layout.
 
 ## Installation and Setup
 
@@ -109,6 +145,9 @@ To run this project locally, follow these steps:
 - **Rings.jsx**: Rotating rings animation using GSAP.
 - **HeroCamera.jsx**: Camera movement logic for immersive effects.
 - **Button.jsx**: Reusable button with optional beam animation.
+- **DemoComputer.jsx**: 3D Computer model.
+- **DemoComputer2.jsx**: 3D Computer model with video texture.
+- **Projects.jsx**: Projects section showcasing work.
 
 ## Scripts
 
